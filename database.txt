@@ -1,0 +1,14 @@
+create database vehicle;
+use vehicle;
+create table register(owner_name varchar(50),
+contact_no varchar(12),
+address varchar(50),
+license_no varchar(50),
+vehicle_no varchar(50) primary key,
+vehicle_details varchar(150),
+prepaid_amount double,
+toll_price double,
+register_date timestamp);
+
+create table vehicle_pass(vehicle_no varchar(50),owner_name varchar(50),
+pass_time timestamp,amount double);
